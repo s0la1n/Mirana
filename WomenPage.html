@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+    <title>Магазин одежды "Mirana"</title>
+  </head>
+  <body class="page">
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>ЗАРЕГИСТРИРОВАТЬСЯ</h3>
+          <p>Заполните информацию для регистрации</p>
+          <form id="registrationForm">
+            <div class="input-boxes">
+              <input type="text" id="firstName" name="firstName" placeholder="Имя" required>
+              <input type="text" id="lastName" name="lastName" placeholder="Фамилия" required>
+              <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required pattern="[0-9]{10}">
+              <input type="password" id="password" name="password" placeholder="Пароль" required>
+              <input type="password" id="confirmPassword" placeholder="Повторите пароль" name="confirmPassword" required>
+            </div>
+            <input type="checkbox" id="agreement" class="custom-checkbox" required >
+            <label for="agreement" class="custom-label">
+              Принимаю пользовательское<br>соглашение и политику конфиденциальности
+            </label>
+              <input type="submit" value="СОЗДАТЬ АККАУНТ" >
+          </form>
+      </div>
+  </div>
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+            <a href="#">
+              <div class="burger-button">☰</div>
+            </a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#">ЖЕНЩИНЫ</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#">МУЖЧИНЫ</a>
+          </li>
+        </ul>
+        <div class="logo">
+            <a href="MainPage.html">
+              <img src="img/logo-nav.svg" alt="Логотип Mirana" width="113" height="52">
+            </a>
+        </div>
+        <ul class="site-navigation-icons">
+            <li class="site-navigation-icon">
+            <a href="#" id="openModal">
+              <img src="img/profile.svg" alt="Профиль" width="22" height="24">
+            </a>
+          </li>
+          <li class="site-navigation-icon">
+            <a href="#">
+              <img src="img/wishlist.svg" alt="Избранное" width="26" height="24">
+            </a>
+          </li>
+          <li class="site-navigation-icon">
+            <a href="#">
+              <img src="img/cart.svg" alt="Корзина" width="22" height="26">
+            </a>
+          </li>
+        </ul>
+          <div class="burger-menu">
+            <ul class="burger-menu-items">
+              <li class="burger-menu-item"><a href="women.html">Женщины</a></li>
+              <li class="burger-menu-item"><a href="men.html">Мужчины</a></li>
+              <li class="burger-menu-item">Покупателю</li>
+              <li class="burger-menu-item">
+                <ul class="burger-menu-buyer">
+                  <li class="buyer-item"><a href="promotions.html">Акции</a></li>
+                  <li class="buyer-item"><a href="delivery.html">Доставка</a></li>
+                  <li class="buyer-item"><a href="payment.html">Оплата</a></li>
+                </ul>
+              </li>
+              <li class="burger-menu-item">О компании</li>
+              <li class="burger-menu-item">
+                <ul class="burger-menu-about">
+                  <li class="about-item"><a href="news.html">Новости</a></li>
+                  <li class="about-item"><a href="stores.html">Адреса магазинов</a></li>
+                </ul>
+              </li>
+              <li class="burger-menu-item">Работа в Mirana</li>
+              <li class="burger-menu-item">
+                <ul class="burger-menu-job">
+                  <li class="job-item"><a href="vacancies.html">Вакансии</a></li>
+                  <li class="job-item"><a href="apply.html">Заполнить анкету</a></li> 
+                </ul>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="woman-catalog">
+        <h2>ЖЕНЩИНЫ</h2>
+        <ul class="nav-types">
+          <li class="nav-type">
+            <a href="#woman-outerwear"><h4>Верхняя одежда</h4></a>
+          </li>
+          <li class="nav-type">
+            <a href="#woman-jumpersAndCardigans"><h4>Джемперы и кардиганы</h4></a>
+          </li>
+          <li class="nav-type">
+            <a href="#woman-hoodiesAndSweatshirts"><h4>Толстовки и худи</h4></a>
+          </li>
+          <li class="nav-type">
+            <a href="#woman-tShirtsAndLongSleeves"><h4>Футболки и лонгсливы</h4></a>
+          </li>
+          <li class="nav-type">
+            <a href="#woman-dresses"><h4>Платья</h4></a>
+          </li>
+          <li class="nav-type">
+            <a href="#woman-jeans"><h4>Джинсы</h4></a>
+          </li>
+          <li class="nav-type">
+            <a href="#woman-skirts"><h4>Юбки</h4></a>
+          </li>
+          <li class="nav-type">
+            <a href="#woman-pants"><h4>Брюки</h4></a>
+          </li>
+          <li class="nav-type">
+            <a href="#woman-blousesAndShirts"><h4>Блузки и рубашки</h4></a>
+          </li>
+        </ul>
+        <div class="woman-outerwear" id="woman-outerwear">
+          <h3>ВЕРХНЯЯ ОДЕЖДА</h3>
+          <ul class="woman-outerwear-cards cards"></ul>
+        </div>
+        <div class="woman-jumpersAndCardigans" id="woman-jumpersAndCardigans">
+          <h3>ДЖЕМПЕРЫ И КАРДИГАНЫ</h3>
+          <ul class="woman-jumpersAndCardigans-cards cards"></ul>
+        </div>
+        <div class="woman-hoodiesAndSweatshirts" id="woman-hoodiesAndSweatshirts">
+          <h3>ТОЛСТОВКИ И ХУДИ</h3>
+          <ul class="woman-hoodiesAndSweatshirts-cards cards"></ul>
+        </div>
+        <div class="woman-tShirtsAndLongSleeves" id="woman-tShirtsAndLongSleeves">
+          <h3>ФУТБОЛКИ И ЛОНГСЛИВЫ</h3>
+          <ul class="woman-tShirtsAndLongSleeves-cards cards"></ul>
+        </div>
+        <div class="woman-dresses" id="woman-dresses">
+          <h3>ПЛАТЬЯ</h3>
+          <ul class="woman-dresses-cards cards"></ul>
+        </div>
+        <div class="woman-jeans" id="woman-jeans">
+          <h3>ДЖИНСЫ</h3>
+          <ul class="woman-jeans-cards cards"></ul>
+        </div>
+        <div class="woman-skirts" id="woman-skirts">
+          <h3>ЮБКИ</h3>
+          <ul class="woman-skirts-cards cards"></ul>
+        </div>
+        <div class="woman-pants" id="woman-pants">
+          <h3>БРЮКИ</h3>
+          <ul class="woman-pants-cards cards"></ul>
+        </div>
+        <div class="woman-blousesAndShirts" id="woman-blousesAndShirts">
+          <h3>БЛУЗКИ И РУБАШКИ</h3>
+          <ul class="woman-blousesAndShirts-cards cards"></ul>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="first-part">
+          <ul class="site-navigation-footer">
+            <li class="navigation-footer-costumer">
+                <ul>
+                  <li class="navigation-footer-caption"><h5>Покупателю</h5></li>
+                  <li class="navigation-footer-item">
+                    <a href="#"><h5>Акции</h5></a>
+                  </li>
+                  <li class="navigation-footer-item">
+                    <a href="#"><h5>Доставка</h5></a>
+                  </li>
+                  <li class="navigation-footer-item">
+                    <a href="#"><h5>Оплата</h5></a>
+                  </li>
+                </ul>
+            </li>
+            <li class="navigation-footer-company">
+                <ul>
+                  <li class="navigation-footer-caption"><h5>О компании</h5></li>
+                  <li class="navigation-footer-item">
+                    <a href="#"><h5>Новости</h5></a>
+                  </li>
+                  <li class="navigation-footer-item">
+                    <a href="#"><h5>Адреса магазинов</h5></a>
+                  </li>
+                </ul>
+            </li>
+            <li class="navigation-footer-job">
+                <ul>
+                  <li class="navigation-footer-caption"><h5>Работа в Mirana</h5></li>
+                  <li class="navigation-footer-item">
+                    <a href="#"><h5>Вакансии</h5></a>
+                  </li>
+                  <li class="navigation-footer-item">
+                    <a href="#"><h5>Заполнить анкету</h5></a>
+                  </li>
+                </ul>
+            </li>
+          </ul>
+          <div class="our-app">
+            <h5>Скачайте наше приложение</h5>
+            <ul class="download-items">
+            <li class="contact-item">
+              <a href="#"><img src="img/play-market.png" alt=""></a>
+            </li>
+            <li class="contact-item">
+              <a href="#"><img src="img/app-store.png" alt=""></a>
+            </li>
+          </ul>
+          </div>
+          <div class="subscribe-news">
+            <h5>Подпишитесь на нашу рассылку</h5>
+            <form method="get" class="form-subscribe">
+              <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Email" >
+                <input type="submit" value="ПОДПИСАТЬСЯ" >
+              </div>
+              <div class="form-group">
+                  <input type="checkbox" id="agreement-footer" class="custom-checkbox" required >
+                  <label for="agreement-footer" class="custom-label">
+                    Принимаю 
+                    <a href="#user-agreement" target="_blank">пользовательское<br>соглашение</a> и 
+                    <a href="#privacy-policy" target="_blank">политику конфиденциальности</a>
+                  </label>
+                </div>
+              </form>
+          </div>
+        </div>
+        <div class="second-part">
+          <div class="about-us">
+            <img src="img/logo-footer.svg" alt="Логотип Mirana">
+            <p class="about-us-info">
+              Добро пожаловать в магазин одежды Mirana! Здесь вы найдёте стильные и качественные вещи для мужчин и женщин. Мы предлагаем широкий ассортимент одежды разных стилей и направлений, а также высокое качество материалов и индивидуальный подход к каждому клиенту. Приходите к нам за идеальным образом!
+            </p>
+          </div>
+          <div class="support">
+            <ul class="supports">
+              <li class="supports-caption"><h5>Служба поддержки</h5></li>
+              <li class="supports-item">
+                <a href="tel:+79000000000">+7(900)000-00-00</a>
+              </li>
+              <li class="supports-item">
+                <a href="mailto:support@mail.ru">support@mail.ru</a>
+              </li>
+            </ul>
+            <ul class="soc-icons">
+              <li class="soc-icon-item">
+                <a class="tg-icon">
+                </a>
+              </li>
+              <li class="soc-icon-item">
+                <a class="vk-icon">
+                </a>
+              </li>
+              <li class="soc-icon-item">
+                <a class="wha-icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="rights">
+            <p> ООО “MIRANA” Все права защищены.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <script src="js/script-catalog.js"></script>
+  <script src="js/data.js"></script>
+  </body>
+</html>
